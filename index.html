@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STAVA Consultings</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <img src="logo-small.png" alt="Logo" />
+    <div>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueberuns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </nav>
+
+  <header>
+    <img src="logo-large.png" alt="STAVA Logo" class="main-logo" />
+    <h1>AI for Businesses</h1>
+    <p class="subline">Beratung für morgen – mit den Menschen von heute.</p>
+    <a href="#kontakt"><button class="cta">Kostenloses Erstgespräch vereinbaren</button></a>
+  </header>
+
+  <section id="leistungen">
+    <h2>Unsere Leistungen</h2>
+    <div class="grid">
+      <div class="card"><h3>KI-Workshops</h3><p>Interaktive und praxisnahe Schulungen zur KI-Nutzung für Ihre Teams.</p></div>
+      <div class="card"><h3>Mitarbeiterschulung</h3><p>Individuelle Integration neuer Technologien ohne Jobverluste.</p></div>
+      <div class="card"><h3>Strategieberatung</h3><p>Von der Planung bis zur Umsetzung mit künstlicher Intelligenz.</p></div>
+      <div class="card"><h3>Optimierung</h3><p>Automatisierung und Effizienzsteigerung für interne Prozesse.</p></div>
+    </div>
+  </section>
+
+  <section id="ueberuns">
+    <h2>Über uns</h2>
+    <p class="about-text">Wir sind STAVA – Tim Lutz Vantler und Moritz Horst Frank Standke. Zwei Wirtschaftsingenieur-Studenten mit den Schwerpunkten Maschinenbau (Tim) und Elektrotechnik (Moritz). Unsere Vision: Unternehmen mit Künstlicher Intelligenz zukunftssicher und menschlich gestalten.</p>
+    <div class="team">
+      <div>
+        <img src="tim.jpg" alt="Tim" class="profile" />
+        <p><strong>Tim Lutz Vantler</strong><br>Student Wirtschaftsingenieurwesen (B.Eng.) – Maschinenbau</p>
+      </div>
+      <div>
+        <img src="moritz.jpg" alt="Moritz" class="profile" />
+        <p><strong>Moritz Horst Frank Standke</strong><br>Student Wirtschaftsingenieurwesen (B.Eng.) – Elektrotechnik</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Vorname" required />
+      <input type="text" placeholder="Nachname" required />
+      <input type="email" placeholder="E-Mail-Adresse" required />
+      <textarea placeholder="Ihre Nachricht..." required></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#" onclick="openPopup('impressum')">Impressum</a>
+      <a href="#" onclick="openPopup('datenschutz')">Datenschutz</a>
+      <a href="#" onclick="openPopup('agb')">AGB</a>
+    </div>
+    <p>&copy; 2025 STAVA Consultings</p>
+  </footer>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <div id="popup-text"></div>
+    </div>
+  </div>
+</body>
+</html>
